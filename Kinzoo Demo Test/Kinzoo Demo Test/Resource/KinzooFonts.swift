@@ -11,6 +11,7 @@ struct KinzooFonts {
     static let cellNameFont = UIFont.systemFont(ofSize: 20)
     static let headerFont = UIFont.systemFont(ofSize: 30)
     static let descriptionFont = UIFont.systemFont(ofSize: 16)
+    static let descriptionFontBold = UIFont.systemFont(ofSize: 16, weight: .bold)
     static let nameFont = UIFont.systemFont(ofSize: 20, weight: .bold)
 }
 

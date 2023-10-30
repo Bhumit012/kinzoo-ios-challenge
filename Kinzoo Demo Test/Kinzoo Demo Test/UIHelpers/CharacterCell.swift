@@ -25,6 +25,8 @@ final class CharacterCell: UITableViewCell {
         let label = UILabel()
         label.font = KinzooFonts.cellNameFont
         label.textColor = KinzooColors.regularFont
+        
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

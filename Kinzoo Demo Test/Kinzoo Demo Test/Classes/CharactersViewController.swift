@@ -12,10 +12,12 @@ final class CharactersViewController: UIViewController {
     
     //MARK: Properties
     
+    private let cellID = "CharacterCell"
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.dataSource = self
-        tableView.register(CharacterCell.self, forCellReuseIdentifier: "CharacterCell")
+        tableView.register(CharacterCell.self, forCellReuseIdentifier: cellID)
         return tableView
     }()
     
@@ -50,7 +52,7 @@ final class CharactersViewController: UIViewController {
         tableView = UITableView()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(CharacterCell.self, forCellReuseIdentifier: "CharacterCell")
+        tableView.register(CharacterCell.self, forCellReuseIdentifier: cellID)
         view.addSubview(tableView)
         
         tableView.snp.makeConstraints { make in
@@ -78,7 +80,7 @@ extension CharactersViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath) as! CharacterCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! CharacterCell
         let character = viewModel.characters[indexPath.row]
         cell.selectionStyle = .none
         cell.configure(with: character)
@@ -107,6 +109,9 @@ extension CharactersViewController: CharactersViewModelDelegate {
         print("Err: \(error.localizedDescription)")
     }
 }
+
+
+//MARK: Strings
 
 fileprivate struct Strings {
     static let headerTitle =  NSLocalizedString("Wubba-lubba-dub-dub!", comment: "Title of the page")

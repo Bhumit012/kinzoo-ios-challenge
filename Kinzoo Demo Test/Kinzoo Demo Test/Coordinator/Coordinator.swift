@@ -18,6 +18,8 @@ protocol Coordinator: AnyObject {
 }
 
 extension Coordinator {
+    
+    // not using this function in app but keeping it here for good practice
     func navigateTo(_ viewController: UIViewController) {
         navigationController.pushViewController(viewController, animated: true)
     }

@@ -13,18 +13,13 @@ class CharactersDetailsViewController: UIViewController {
     // MARK: Properties
     private let viewModel: CharacterDetailViewModel
 
+    
+    
     private lazy var characterImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         return imageView
-    }()
-
-    private lazy var characterNameLabel: UILabel = {
-        let label = UILabel()
-        label.font = KinzooFonts.nameFont
-        label.textColor = KinzooColors.regularFont
-        return label
     }()
 
     private lazy var characterStatusLabel: UILabel = {
@@ -43,9 +38,9 @@ class CharactersDetailsViewController: UIViewController {
 
     private lazy var episodesLabel: UILabel = {
         let label = UILabel()
-        label.font = KinzooFonts.descriptionFont
+        label.font = KinzooFonts.descriptionFontBold
         label.textColor = KinzooColors.secondaryFont
-        label.text = "Episodes:"
+        label.text = Strings.epiTitle
         return label
     }()
 
@@ -74,7 +69,7 @@ class CharactersDetailsViewController: UIViewController {
         view.backgroundColor = .white
 
         view.addSubview(characterImageView)
-        view.addSubview(characterNameLabel)
+        
         view.addSubview(characterStatusLabel)
         view.addSubview(characterSpeciesLabel)
         view.addSubview(episodesLabel)
@@ -84,45 +79,64 @@ class CharactersDetailsViewController: UIViewController {
 
         if let character = viewModel.character {
             title = "\(character.name)'s Details"
-            characterNameLabel.text = character.name
+            
             characterStatusLabel.text = "Status: \(character.status)"
             characterSpeciesLabel.text = "Species: \(character.species)"
-            episodesListTextView.text = character.episode.joined(separator: "\n")
+            
+//            let episodeStrings = character.episode.filter { url in
+            let episodeStrings = character.episode.map { url in
+                if let episodeNumber = URL(string: url)?.lastPathComponent {
+                    return "Episode \(episodeNumber)"
+                } else {
+                    return "unkonwn episode"
+                }
+            }
+
+            episodesListTextView.text = episodeStrings.joined(separator: "\n")
+            
             characterImageView.af.setImage(withURL: URL(string: character.image)!)
         }
     }
 
     private func setupConstraints() {
         characterImageView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(Constant.vertOffset)
             make.centerX.equalToSuperview()
             make.width.height.equalTo(120)
         }
 
-        characterNameLabel.snp.makeConstraints { make in
-            make.top.equalTo(characterImageView.snp.bottom).offset(20)
-            make.leading.trailing.equalTo(view).inset(20)
-        }
-
         characterStatusLabel.snp.makeConstraints { make in
-            make.top.equalTo(characterNameLabel.snp.bottom).offset(10)
-            make.leading.trailing.equalTo(view).inset(20)
+            make.top.equalTo(characterImageView.snp.bottom).offset(Constant.vertOffset)
+            make.leading.trailing.equalTo(view).inset(Constant.horizontalPadding)
         }
 
         characterSpeciesLabel.snp.makeConstraints { make in
-            make.top.equalTo(characterStatusLabel.snp.bottom).offset(10)
-            make.leading.trailing.equalTo(view).inset(20)
+            make.top.equalTo(characterStatusLabel.snp.bottom).offset(Constant.vertOffset)
+            make.leading.trailing.equalTo(view).inset(Constant.horizontalPadding)
         }
 
+        
         episodesLabel.snp.makeConstraints { make in
-            make.top.equalTo(characterSpeciesLabel.snp.bottom).offset(20)
-            make.leading.trailing.equalTo(view).inset(20)
+            make.top.equalTo(characterSpeciesLabel.snp.bottom).offset(Constant.vertOffset)
+            make.leading.trailing.equalTo(view).inset(Constant.horizontalPadding)
         }
 
         episodesListTextView.snp.makeConstraints { make in
-            make.top.equalTo(episodesLabel.snp.bottom).offset(10)
-            make.leading.trailing.equalTo(view).inset(20)
+            make.top.equalTo(episodesLabel.snp.bottom).offset(Constant.vertOffset)
+            make.leading.trailing.equalTo(view).inset(Constant.horizontalPadding)
             make.bottom.equalTo(view.safeAreaLayoutGuide)
         }
     }
+}
+
+
+//MARK: Constants
+
+fileprivate struct Strings {
+    static let epiTitle =  NSLocalizedString("Episodes:", comment: "Episode title")
+}
+
+fileprivate struct Constant {
+    static let horizontalPadding = 20
+    static let vertOffset = 10
 }
