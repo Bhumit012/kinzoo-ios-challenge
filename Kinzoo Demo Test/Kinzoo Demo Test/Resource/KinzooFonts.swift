@@ -5,4 +5,10 @@
 //  Created by Bhumit Muchhadia on 2023-10-30.
 //
 
-import Foundation
+import UIKit
+
+struct KinzooFonts {
+    static let cellNameFont = UIFont.systemFont(ofSize: 20)
+    static let headerFont = UIFont.systemFont(ofSize: 30)
+}
+

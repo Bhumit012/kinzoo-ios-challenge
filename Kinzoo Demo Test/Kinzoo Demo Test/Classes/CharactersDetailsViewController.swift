@@ -13,12 +13,12 @@ final class CharactersDetailsViewController: UIViewController {
     //MARK: Properties
     
 
-    private let viewModel: CharactersDetailsViewModel
+    private let viewModel: CharacterDetailViewModel
 
     
     //MARK: Init
     
-    init(viewModel: CharactersDetailsViewModel) {
+    init(viewModel: CharacterDetailViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

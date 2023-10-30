@@ -12,6 +12,7 @@ struct MyAPIClient {
     static let baseURL = "https://rickandmortyapi.com/api"
     
     enum Endpoints {
+        // adding more cases here should force us to make new paths
         case character
         
         var path: String {

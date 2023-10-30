@@ -11,36 +11,50 @@ import UIKit
 protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
-
+    
     func start()
+    func startToCharacterDetails()
     func navigateTo(_ viewController: UIViewController)
-    func childDidFinish(_ childCoordinator: Coordinator)
 }
 
 extension Coordinator {
     func navigateTo(_ viewController: UIViewController) {
         navigationController.pushViewController(viewController, animated: true)
     }
-
-    func childDidFinish(_ childCoordinator: Coordinator) {
-        childCoordinators = childCoordinators.filter { $0 !== childCoordinator }
-    }
 }
 
 final class MainCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        
     }
-
+    
     func start() {
-          // Create and set up the CharactersViewModel
-          let charactersViewModel = CharactersViewModel()
+        
+        // Create and set up the CharactersViewModel
+        let charactersViewModel = CharactersViewModel(characterDataManager: CharacterDataManager.shared)
         
         // inject the dependencies
         let mainViewController = CharactersViewController(viewModel: charactersViewModel)
-          navigateTo(mainViewController)
-      }
+        
+        //navigationController.setViewControllers([mainViewController], animated: true)
+        DispatchQueue.main.async { [weak self] in
+            self?.navigateTo(mainViewController)
+        }
+    }
+    
+    func startToCharacterDetails() {
+        // Create and set up the CharactersViewModel
+        let charactersDetailViewModel = CharacterDetailViewModel(characterDataManager: CharacterDataManager.shared)
+        
+        // inject the dependencies
+        let detailViewController = CharactersDetailsViewController(viewModel: charactersDetailViewModel)
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.navigateTo(detailViewController)
+        }
+    }
 }

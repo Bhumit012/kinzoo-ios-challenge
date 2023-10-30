@@ -8,10 +8,19 @@
 import Foundation
 
 
-struct CharactersDetailsViewModel {
-
+final class CharacterDetailViewModel {
+    
+    //MARK: Properties
+    
     weak var delegate: CharactersViewModelDelegate?
-
-    var characters: Character
-
+    let characterDataManager: CharacterDataManager
+    
+    // this can be imporved further by calling API when getCharacters() is empty instead of doing it manualy like below.
+    var characters: [Character] {
+        return characterDataManager.getCharacters()
+    }
+    
+    init(characterDataManager: CharacterDataManager) {
+        self.characterDataManager = characterDataManager
+    }
 }

@@ -16,10 +16,6 @@ class CharacterDataManager {
     
     private var characters: [Character] = []
     
-    func setCharacters(_ characters: [Character]) {
-        self.characters = characters
-    }
-    
     func getCharacters() -> [Character] {
         return characters
     }

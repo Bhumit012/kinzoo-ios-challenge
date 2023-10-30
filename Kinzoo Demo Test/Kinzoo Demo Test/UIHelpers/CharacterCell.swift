@@ -17,13 +17,14 @@ final class CharacterCell: UITableViewCell {
     private lazy var characterImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.translatesAutoresizingMaskIntoConstraints = true
         return imageView
     }()
     
     private lazy var characterNameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        label.font = KinzooFonts.cellNameFont
+        label.textColor = KinzooColors.regularFont
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -44,6 +45,9 @@ final class CharacterCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func awakeFromNib() {
+       super.awakeFromNib()
+    }
     
     // MARK: Config
     
