@@ -20,6 +20,9 @@ class CharacterDataManager {
         return characters
     }
     
+    func setCharacters(chars: [Character]) {
+        characters = chars
+    }
     
     //MARK: Functions
     

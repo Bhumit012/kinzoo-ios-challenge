@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol Coordinator: AnyObject {
-    var childCoordinators: [Coordinator] { get set }
+    var currentVC: UIViewController? { get set }
     var navigationController: UINavigationController { get set }
     
     func navigateToCharactersVC()
@@ -22,16 +22,17 @@ extension Coordinator {
     // not using this function in app but keeping it here for good practice
     func navigateTo(_ viewController: UIViewController) {
         navigationController.pushViewController(viewController, animated: true)
+        
+        currentVC = viewController
     }
 }
 
 final class MainCoordinator: Coordinator {
-    var childCoordinators: [Coordinator] = []
+    var currentVC: UIViewController?
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        
     }
     
     func navigateToCharactersVC() {

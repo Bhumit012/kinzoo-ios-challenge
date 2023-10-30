@@ -3,4 +3,228 @@
    uuid = "F766B914-A658-4F71-8227-9FB29E8A4600"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9C01190-451F-4D16-8773-419754926542"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kinzoo Demo Test/Coordinator/Coordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "navigateToCharacterDetailsVC(charID:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "106129C1-279B-4EF0-A4C5-BF6E460A450E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kinzoo Demo Test/Classes/CharactersDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A89F6564-4CE5-441D-B9BC-D0F57F409A0A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kinzoo Demo TestTests/SnapShotTestDetails.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "testExampleDetailPage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A89F6564-4CE5-441D-B9BC-D0F57F409A0A - 206af5b1b1ea58de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kinzoo_Demo_TestTests.SnapShotTestDetails.testExample() throws -&gt; ()"
+                  moduleName = "Kinzoo Demo TestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhumz/Documents/GitHub/kinzoo-ios-challenge/Kinzoo%20Demo%20Test/Kinzoo%20Demo%20TestTests/SnapShotTestDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "A89F6564-4CE5-441D-B9BC-D0F57F409A0A - 206af5b1b1ea58de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kinzoo_Demo_TestTests.SnapShotTestDetails.testExample() throws -&gt; ()"
+                  moduleName = "Kinzoo Demo TestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhumz/Documents/GitHub/kinzoo-ios-challenge/Kinzoo%20Demo%20Test/Kinzoo%20Demo%20TestTests/SnapShotTestDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "A89F6564-4CE5-441D-B9BC-D0F57F409A0A - 206af5b1b1ea5860"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kinzoo_Demo_TestTests.SnapShotTestDetails.testExample() throws -&gt; ()"
+                  moduleName = "Kinzoo Demo TestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhumz/Documents/GitHub/kinzoo-ios-challenge/Kinzoo%20Demo%20Test/Kinzoo%20Demo%20TestTests/SnapShotTestDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "A89F6564-4CE5-441D-B9BC-D0F57F409A0A - 206af5b1b1ea5860"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kinzoo_Demo_TestTests.SnapShotTestDetails.testExample() throws -&gt; ()"
+                  moduleName = "Kinzoo Demo TestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhumz/Documents/GitHub/kinzoo-ios-challenge/Kinzoo%20Demo%20Test/Kinzoo%20Demo%20TestTests/SnapShotTestDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "496">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F8A276E-9FEC-42C9-A3FA-BBEAFBCD258C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kinzoo Demo TestTests/SnapShotTestDetails.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1F8A276E-9FEC-42C9-A3FA-BBEAFBCD258C - e26b3519d1565904"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kinzoo_Demo_TestTests.SnapShotTestDetails.setUpWithError() throws -&gt; ()"
+                  moduleName = "Kinzoo Demo TestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhumz/Documents/GitHub/kinzoo-ios-challenge/Kinzoo%20Demo%20Test/Kinzoo%20Demo%20TestTests/SnapShotTestDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "2352">
+               </Location>
+               <Location
+                  uuid = "1F8A276E-9FEC-42C9-A3FA-BBEAFBCD258C - e26b3519d15659eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kinzoo_Demo_TestTests.SnapShotTestDetails.setUpWithError() throws -&gt; ()"
+                  moduleName = "Kinzoo Demo TestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhumz/Documents/GitHub/kinzoo-ios-challenge/Kinzoo%20Demo%20Test/Kinzoo%20Demo%20TestTests/SnapShotTestDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "2368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56C16037-4245-4736-8F0B-3778ABB7282E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kinzoo Demo TestTests/SnapShotTestDetails.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "tearDownWithError()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "56C16037-4245-4736-8F0B-3778ABB7282E - f71fdf38ea1e6956"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kinzoo_Demo_TestTests.SnapShotTestDetails.tearDownWithError() throws -&gt; ()"
+                  moduleName = "Kinzoo Demo TestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhumz/Documents/GitHub/kinzoo-ios-challenge/Kinzoo%20Demo%20Test/Kinzoo%20Demo%20TestTests/SnapShotTestDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "56C16037-4245-4736-8F0B-3778ABB7282E - f71fdf38ea1e6ab1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kinzoo_Demo_TestTests.SnapShotTestDetails.tearDownWithError() throws -&gt; ()"
+                  moduleName = "Kinzoo Demo TestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhumz/Documents/GitHub/kinzoo-ios-challenge/Kinzoo%20Demo%20Test/Kinzoo%20Demo%20TestTests/SnapShotTestDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FAA1F4D-0A48-4AB3-8E7E-CD582CDB751E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kinzoo Demo Test/Classes/CharactersDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "init(viewModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
