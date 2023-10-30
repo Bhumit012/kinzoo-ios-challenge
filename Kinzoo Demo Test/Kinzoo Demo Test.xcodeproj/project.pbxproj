@@ -9,13 +9,26 @@
 /* Begin PBXBuildFile section */
 		2681BFD22AEDFE39006412F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681BFD12AEDFE39006412F3 /* AppDelegate.swift */; };
 		2681BFD42AEDFE39006412F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681BFD32AEDFE39006412F3 /* SceneDelegate.swift */; };
-		2681BFD62AEDFE39006412F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681BFD52AEDFE39006412F3 /* ViewController.swift */; };
 		2681BFD92AEDFE39006412F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2681BFD72AEDFE39006412F3 /* Main.storyboard */; };
 		2681BFDB2AEDFE39006412F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2681BFDA2AEDFE39006412F3 /* Assets.xcassets */; };
 		2681BFDE2AEDFE3A006412F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2681BFDC2AEDFE39006412F3 /* LaunchScreen.storyboard */; };
 		2681BFE92AEDFE3A006412F3 /* Kinzoo_Demo_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681BFE82AEDFE3A006412F3 /* Kinzoo_Demo_TestTests.swift */; };
 		2681BFF32AEDFE3A006412F3 /* Kinzoo_Demo_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681BFF22AEDFE3A006412F3 /* Kinzoo_Demo_TestUITests.swift */; };
 		2681BFF52AEDFE3A006412F3 /* Kinzoo_Demo_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681BFF42AEDFE3A006412F3 /* Kinzoo_Demo_TestUITestsLaunchTests.swift */; };
+		26F2AA3B2AEF3AC0005874D9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 26F2AA3A2AEF3AC0005874D9 /* Alamofire */; };
+		26F2AA3E2AEF3ADF005874D9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26F2AA3D2AEF3ADF005874D9 /* SnapKit */; };
+		26F2AA402AEF3ADF005874D9 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 26F2AA3F2AEF3ADF005874D9 /* SnapKit-Dynamic */; };
+		26F2AA432AEF3B35005874D9 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 26F2AA422AEF3B35005874D9 /* InlineSnapshotTesting */; };
+		26F2AA452AEF3B35005874D9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 26F2AA442AEF3B35005874D9 /* SnapshotTesting */; };
+		26F2AA4C2AEF3BCD005874D9 /* KinzooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA4B2AEF3BCD005874D9 /* KinzooAPI.swift */; };
+		26F2AA4E2AEF3C88005874D9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA4D2AEF3C88005874D9 /* Coordinator.swift */; };
+		26F2AA502AEF3CD2005874D9 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA4F2AEF3CD2005874D9 /* CharactersViewController.swift */; };
+		26F2AA522AEF3CE9005874D9 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA512AEF3CE9005874D9 /* CharactersViewModel.swift */; };
+		26F2AA542AEF3D1B005874D9 /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA532AEF3D1B005874D9 /* CharacterDetailsViewModel.swift */; };
+		26F2AA562AEF3D29005874D9 /* CharactersDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA552AEF3D29005874D9 /* CharactersDetailsViewController.swift */; };
+		26F2AA592AEF3E74005874D9 /* KinzooAPIDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA582AEF3E74005874D9 /* KinzooAPIDataModel.swift */; };
+		26F2AA5C2AEF4022005874D9 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA5B2AEF4022005874D9 /* CharacterCell.swift */; };
+		26F2AA5E2AEF43A1005874D9 /* KinzooColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA5D2AEF43A1005874D9 /* KinzooColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +52,6 @@
 		2681BFCE2AEDFE39006412F3 /* Kinzoo Demo Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kinzoo Demo Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2681BFD12AEDFE39006412F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2681BFD32AEDFE39006412F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2681BFD52AEDFE39006412F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2681BFD82AEDFE39006412F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2681BFDA2AEDFE39006412F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2681BFDD2AEDFE3A006412F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,15 @@
 		2681BFEE2AEDFE3A006412F3 /* Kinzoo Demo TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kinzoo Demo TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2681BFF22AEDFE3A006412F3 /* Kinzoo_Demo_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kinzoo_Demo_TestUITests.swift; sourceTree = "<group>"; };
 		2681BFF42AEDFE3A006412F3 /* Kinzoo_Demo_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kinzoo_Demo_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26F2AA4B2AEF3BCD005874D9 /* KinzooAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooAPI.swift; sourceTree = "<group>"; };
+		26F2AA4D2AEF3C88005874D9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		26F2AA4F2AEF3CD2005874D9 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		26F2AA512AEF3CE9005874D9 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		26F2AA532AEF3D1B005874D9 /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
+		26F2AA552AEF3D29005874D9 /* CharactersDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewController.swift; sourceTree = "<group>"; };
+		26F2AA582AEF3E74005874D9 /* KinzooAPIDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooAPIDataModel.swift; sourceTree = "<group>"; };
+		26F2AA5B2AEF4022005874D9 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		26F2AA5D2AEF43A1005874D9 /* KinzooColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F2AA452AEF3B35005874D9 /* SnapshotTesting in Frameworks */,
+				26F2AA3B2AEF3AC0005874D9 /* Alamofire in Frameworks */,
+				26F2AA3E2AEF3ADF005874D9 /* SnapKit in Frameworks */,
+				26F2AA432AEF3B35005874D9 /* InlineSnapshotTesting in Frameworks */,
+				26F2AA402AEF3ADF005874D9 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +125,14 @@
 		2681BFD02AEDFE39006412F3 /* Kinzoo Demo Test */ = {
 			isa = PBXGroup;
 			children = (
+				26F2AA5A2AEF400C005874D9 /* UIHelpers */,
+				26F2AA4A2AEF3BA6005874D9 /* API */,
+				26F2AA492AEF3B75005874D9 /* DeepLink */,
+				26F2AA482AEF3B69005874D9 /* Classes */,
+				26F2AA472AEF3B5F005874D9 /* Resource */,
+				26F2AA462AEF3B52005874D9 /* Coordinator */,
 				2681BFD12AEDFE39006412F3 /* AppDelegate.swift */,
 				2681BFD32AEDFE39006412F3 /* SceneDelegate.swift */,
-				2681BFD52AEDFE39006412F3 /* ViewController.swift */,
 				2681BFD72AEDFE39006412F3 /* Main.storyboard */,
 				2681BFDA2AEDFE39006412F3 /* Assets.xcassets */,
 				2681BFDC2AEDFE39006412F3 /* LaunchScreen.storyboard */,
@@ -127,6 +158,65 @@
 			path = "Kinzoo Demo TestUITests";
 			sourceTree = "<group>";
 		};
+		26F2AA462AEF3B52005874D9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				26F2AA4D2AEF3C88005874D9 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		26F2AA472AEF3B5F005874D9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				26F2AA5D2AEF43A1005874D9 /* KinzooColors.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		26F2AA482AEF3B69005874D9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26F2AA4F2AEF3CD2005874D9 /* CharactersViewController.swift */,
+				26F2AA512AEF3CE9005874D9 /* CharactersViewModel.swift */,
+				26F2AA532AEF3D1B005874D9 /* CharacterDetailsViewModel.swift */,
+				26F2AA552AEF3D29005874D9 /* CharactersDetailsViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		26F2AA492AEF3B75005874D9 /* DeepLink */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeepLink;
+			sourceTree = "<group>";
+		};
+		26F2AA4A2AEF3BA6005874D9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				26F2AA572AEF3E6A005874D9 /* DatModels */,
+				26F2AA4B2AEF3BCD005874D9 /* KinzooAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		26F2AA572AEF3E6A005874D9 /* DatModels */ = {
+			isa = PBXGroup;
+			children = (
+				26F2AA582AEF3E74005874D9 /* KinzooAPIDataModel.swift */,
+			);
+			path = DatModels;
+			sourceTree = "<group>";
+		};
+		26F2AA5A2AEF400C005874D9 /* UIHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				26F2AA5B2AEF4022005874D9 /* CharacterCell.swift */,
+			);
+			path = UIHelpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +233,13 @@
 			dependencies = (
 			);
 			name = "Kinzoo Demo Test";
+			packageProductDependencies = (
+				26F2AA3A2AEF3AC0005874D9 /* Alamofire */,
+				26F2AA3D2AEF3ADF005874D9 /* SnapKit */,
+				26F2AA3F2AEF3ADF005874D9 /* SnapKit-Dynamic */,
+				26F2AA422AEF3B35005874D9 /* InlineSnapshotTesting */,
+				26F2AA442AEF3B35005874D9 /* SnapshotTesting */,
+			);
 			productName = "Kinzoo Demo Test";
 			productReference = 2681BFCE2AEDFE39006412F3 /* Kinzoo Demo Test.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +312,11 @@
 				Base,
 			);
 			mainGroup = 2681BFC52AEDFE39006412F3;
+			packageReferences = (
+				26F2AA392AEF3AC0005874D9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				26F2AA3C2AEF3ADF005874D9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				26F2AA412AEF3B35005874D9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 2681BFCF2AEDFE39006412F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +360,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2681BFD62AEDFE39006412F3 /* ViewController.swift in Sources */,
+				26F2AA562AEF3D29005874D9 /* CharactersDetailsViewController.swift in Sources */,
+				26F2AA5E2AEF43A1005874D9 /* KinzooColors.swift in Sources */,
+				26F2AA542AEF3D1B005874D9 /* CharacterDetailsViewModel.swift in Sources */,
+				26F2AA5C2AEF4022005874D9 /* CharacterCell.swift in Sources */,
+				26F2AA522AEF3CE9005874D9 /* CharactersViewModel.swift in Sources */,
 				2681BFD22AEDFE39006412F3 /* AppDelegate.swift in Sources */,
+				26F2AA592AEF3E74005874D9 /* KinzooAPIDataModel.swift in Sources */,
+				26F2AA502AEF3CD2005874D9 /* CharactersViewController.swift in Sources */,
+				26F2AA4E2AEF3C88005874D9 /* Coordinator.swift in Sources */,
+				26F2AA4C2AEF3BCD005874D9 /* KinzooAPI.swift in Sources */,
 				2681BFD42AEDFE39006412F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +730,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26F2AA392AEF3AC0005874D9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+		26F2AA3C2AEF3ADF005874D9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		26F2AA412AEF3B35005874D9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26F2AA3A2AEF3AC0005874D9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26F2AA392AEF3AC0005874D9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		26F2AA3D2AEF3ADF005874D9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26F2AA3C2AEF3ADF005874D9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		26F2AA3F2AEF3ADF005874D9 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26F2AA3C2AEF3ADF005874D9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		26F2AA422AEF3B35005874D9 /* InlineSnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26F2AA412AEF3B35005874D9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = InlineSnapshotTesting;
+		};
+		26F2AA442AEF3B35005874D9 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26F2AA412AEF3B35005874D9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2681BFC62AEDFE39006412F3 /* Project object */;
 }
