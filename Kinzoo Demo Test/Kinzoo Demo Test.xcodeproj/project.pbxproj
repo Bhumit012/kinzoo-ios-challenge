@@ -29,6 +29,9 @@
 		26F2AA592AEF3E74005874D9 /* KinzooAPIDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA582AEF3E74005874D9 /* KinzooAPIDataModel.swift */; };
 		26F2AA5C2AEF4022005874D9 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA5B2AEF4022005874D9 /* CharacterCell.swift */; };
 		26F2AA5E2AEF43A1005874D9 /* KinzooColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA5D2AEF43A1005874D9 /* KinzooColors.swift */; };
+		26F2AA612AEF523D005874D9 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 26F2AA602AEF523D005874D9 /* AlamofireImage */; };
+		26F2AA632AEF524F005874D9 /* KinzooFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA622AEF524F005874D9 /* KinzooFonts.swift */; };
+		26F2AA662AEF5951005874D9 /* CharacterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA652AEF5951005874D9 /* CharacterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,8 @@
 		26F2AA582AEF3E74005874D9 /* KinzooAPIDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooAPIDataModel.swift; sourceTree = "<group>"; };
 		26F2AA5B2AEF4022005874D9 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		26F2AA5D2AEF43A1005874D9 /* KinzooColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooColors.swift; sourceTree = "<group>"; };
+		26F2AA622AEF524F005874D9 /* KinzooFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinzooFonts.swift; sourceTree = "<group>"; };
+		26F2AA652AEF5951005874D9 /* CharacterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 				26F2AA3E2AEF3ADF005874D9 /* SnapKit in Frameworks */,
 				26F2AA432AEF3B35005874D9 /* InlineSnapshotTesting in Frameworks */,
 				26F2AA402AEF3ADF005874D9 /* SnapKit-Dynamic in Frameworks */,
+				26F2AA612AEF523D005874D9 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +131,7 @@
 		2681BFD02AEDFE39006412F3 /* Kinzoo Demo Test */ = {
 			isa = PBXGroup;
 			children = (
+				26F2AA642AEF593B005874D9 /* Manager */,
 				26F2AA5A2AEF400C005874D9 /* UIHelpers */,
 				26F2AA4A2AEF3BA6005874D9 /* API */,
 				26F2AA492AEF3B75005874D9 /* DeepLink */,
@@ -170,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				26F2AA5D2AEF43A1005874D9 /* KinzooColors.swift */,
+				26F2AA622AEF524F005874D9 /* KinzooFonts.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -217,6 +225,14 @@
 			path = UIHelpers;
 			sourceTree = "<group>";
 		};
+		26F2AA642AEF593B005874D9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				26F2AA652AEF5951005874D9 /* CharacterManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,6 +255,7 @@
 				26F2AA3F2AEF3ADF005874D9 /* SnapKit-Dynamic */,
 				26F2AA422AEF3B35005874D9 /* InlineSnapshotTesting */,
 				26F2AA442AEF3B35005874D9 /* SnapshotTesting */,
+				26F2AA602AEF523D005874D9 /* AlamofireImage */,
 			);
 			productName = "Kinzoo Demo Test";
 			productReference = 2681BFCE2AEDFE39006412F3 /* Kinzoo Demo Test.app */;
@@ -316,6 +333,7 @@
 				26F2AA392AEF3AC0005874D9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				26F2AA3C2AEF3ADF005874D9 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				26F2AA412AEF3B35005874D9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				26F2AA5F2AEF523D005874D9 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 2681BFCF2AEDFE39006412F3 /* Products */;
 			projectDirPath = "";
@@ -364,9 +382,11 @@
 				26F2AA5E2AEF43A1005874D9 /* KinzooColors.swift in Sources */,
 				26F2AA542AEF3D1B005874D9 /* CharacterDetailsViewModel.swift in Sources */,
 				26F2AA5C2AEF4022005874D9 /* CharacterCell.swift in Sources */,
+				26F2AA632AEF524F005874D9 /* KinzooFonts.swift in Sources */,
 				26F2AA522AEF3CE9005874D9 /* CharactersViewModel.swift in Sources */,
 				2681BFD22AEDFE39006412F3 /* AppDelegate.swift in Sources */,
 				26F2AA592AEF3E74005874D9 /* KinzooAPIDataModel.swift in Sources */,
+				26F2AA662AEF5951005874D9 /* CharacterManager.swift in Sources */,
 				26F2AA502AEF3CD2005874D9 /* CharactersViewController.swift in Sources */,
 				26F2AA4E2AEF3C88005874D9 /* Coordinator.swift in Sources */,
 				26F2AA4C2AEF3BCD005874D9 /* KinzooAPI.swift in Sources */,
@@ -756,6 +776,14 @@
 				minimumVersion = 1.14.0;
 			};
 		};
+		26F2AA5F2AEF523D005874D9 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -783,6 +811,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 26F2AA412AEF3B35005874D9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
+		};
+		26F2AA602AEF523D005874D9 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26F2AA5F2AEF523D005874D9 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -7,20 +7,21 @@
 
 import UIKit
 import SnapKit
+import AlamofireImage
 
 final class CharacterCell: UITableViewCell {
     
     
     // MARK: UI properties
-    
-    lazy var characterImageView: UIImageView = {
+    // i like computed lazy properties
+    private lazy var characterImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-
-    lazy var characterNameLabel: UILabel = {
+    
+    private lazy var characterNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -42,12 +43,16 @@ final class CharacterCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     
     // MARK: Config
     
     func configure(with character: Character) {
         characterNameLabel.text = character.name
+
+        if let imageURL = URL(string: character.image) {
+            characterImageView.af.setImage(withURL: imageURL)
+        }
     }
 
     private func setupConstraints() {

@@ -59,11 +59,11 @@ extension CharactersViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath)
-        let character = viewModel.characters[indexPath.row]
-        cell.textLabel?.text = character.name
-        return cell
-    }
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath) as! CharacterCell
+            let character = viewModel.characters[indexPath.row]
+            cell.configure(with: character)
+            return cell
+        }
 }
 
 extension CharactersViewController: CharactersViewModelDelegate {

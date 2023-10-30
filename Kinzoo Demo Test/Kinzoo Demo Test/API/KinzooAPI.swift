@@ -8,30 +8,29 @@
 import Foundation
 import Alamofire
 
-enum MyAPIClient {
+struct MyAPIClient {
     static let baseURL = "https://rickandmortyapi.com/api"
-
+    
     enum Endpoints {
-        case fetchData
-
-        var stringValue: String {
+        case character
+        
+        var path: String {
             switch self {
-            case .fetchData:
+            case .character:
                 return MyAPIClient.baseURL + "/character"
             }
         }
     }
-
-    static func fetchData(completion: @escaping (Result<CharacterResponse, Error>) -> Void) {
-        let endpoint = Endpoints.fetchData.stringValue
-
+    
+    static func fetchCharacters(completion: @escaping (Result<CharacterResponse, Error>) -> Void) {
+        let endpoint = Endpoints.character.path
+        
         AF.request(endpoint).responseDecodable(of: CharacterResponse.self) { response in
-            
             switch response.result {
-            case .success(let model):
-                completion(.success(model))
-            case .failure(let error):
-                completion(.failure(error))
+                case .success(let model):
+                    completion(.success(model))
+                case .failure(let error):
+                    completion(.failure(error))
             }
         }
     }

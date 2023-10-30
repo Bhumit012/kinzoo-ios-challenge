@@ -12,21 +12,26 @@ protocol CharactersViewModelDelegate: AnyObject {
     func didFailWithError(_ error: Error)
 }
 
-class CharactersViewModel {
+final class CharactersViewModel {
+    
+    //MARK: Properties
+    
     weak var delegate: CharactersViewModelDelegate?
-
-    var characters: [Character] = []
-
+    let characterDataManager = CharacterDataManager.shared
+    
+    // this can be imporved further by calling API when getCharacters() is empty instead of doing it manualy like below.
+    var characters: [Character] {
+        return characterDataManager.getCharacters()
+    }
+    
+    // weak self on callbacks
     func fetchCharacters() {
-        MyAPIClient.fetchData { result in
-            
+        characterDataManager.fetchCharacters { [weak self] result in
             switch result {
-            case .success(let response):
-                self.characters = response.results
-                
-                    self.delegate?.didFetchCharacters()
+            case .success:
+                self?.delegate?.didFetchCharacters()
             case .failure(let error):
-                self.delegate?.didFailWithError(error)
+                self?.delegate?.didFailWithError(error)
             }
         }
     }

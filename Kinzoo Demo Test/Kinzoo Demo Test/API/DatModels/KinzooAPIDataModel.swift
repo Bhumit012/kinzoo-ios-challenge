@@ -8,7 +8,8 @@
 import Foundation
 
 
-// main character model
+//MARK: main character model
+
 struct Character: Codable {
     let id: Int
     let name: String

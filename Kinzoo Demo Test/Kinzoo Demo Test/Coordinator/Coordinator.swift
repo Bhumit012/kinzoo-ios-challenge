@@ -27,7 +27,7 @@ extension Coordinator {
     }
 }
 
-class MainCoordinator: Coordinator {
+final class MainCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
 
