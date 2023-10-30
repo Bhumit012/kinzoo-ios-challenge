@@ -29,6 +29,7 @@ struct MyAPIClient {
         AF.request(endpoint).responseDecodable(of: CharacterResponse.self) { response in
             switch response.result {
                 case .success(let model):
+                
                     completion(.success(model))
                 case .failure(let error):
                     completion(.failure(error))

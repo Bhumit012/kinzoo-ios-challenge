@@ -16,6 +16,7 @@
 		26992E082AEF921C004FDED7 /* KinzooAPIDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26992E072AEF921C004FDED7 /* KinzooAPIDataModel.swift */; };
 		26992E0A2AEF9F22004FDED7 /* SnapShotTestDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26992E092AEF9F22004FDED7 /* SnapShotTestDetails.swift */; };
 		26992E0C2AEFA5CE004FDED7 /* SnapShotTestCharList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26992E0B2AEFA5CE004FDED7 /* SnapShotTestCharList.swift */; };
+		26DC82492AEFBB0C00FFF0F1 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 26DC82482AEFBB0C00FFF0F1 /* Reachability */; };
 		26F2AA3B2AEF3AC0005874D9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 26F2AA3A2AEF3AC0005874D9 /* Alamofire */; };
 		26F2AA4C2AEF3BCD005874D9 /* KinzooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA4B2AEF3BCD005874D9 /* KinzooAPI.swift */; };
 		26F2AA4E2AEF3C88005874D9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2AA4D2AEF3C88005874D9 /* Coordinator.swift */; };
@@ -81,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F2AA3B2AEF3AC0005874D9 /* Alamofire in Frameworks */,
+				26DC82492AEFBB0C00FFF0F1 /* Reachability in Frameworks */,
 				26F2AA612AEF523D005874D9 /* AlamofireImage in Frameworks */,
 				26F2AA692AEF6459005874D9 /* SnapKit in Frameworks */,
 			);
@@ -249,6 +251,7 @@
 				26F2AA3A2AEF3AC0005874D9 /* Alamofire */,
 				26F2AA602AEF523D005874D9 /* AlamofireImage */,
 				26F2AA682AEF6459005874D9 /* SnapKit */,
+				26DC82482AEFBB0C00FFF0F1 /* Reachability */,
 			);
 			productName = "Kinzoo Demo Test";
 			productReference = 2681BFCE2AEDFE39006412F3 /* Kinzoo Demo Test.app */;
@@ -330,6 +333,7 @@
 				26F2AA5F2AEF523D005874D9 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 				26F2AA672AEF6459005874D9 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				26F2AA6A2AEF65A9005874D9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				26DC82472AEFBB0C00FFF0F1 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
 			);
 			productRefGroup = 2681BFCF2AEDFE39006412F3 /* Products */;
 			projectDirPath = "";
@@ -742,6 +746,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		26DC82472AEFBB0C00FFF0F1 /* XCRemoteSwiftPackageReference "Reachability.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		26F2AA392AEF3AC0005874D9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -777,6 +789,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		26DC82482AEFBB0C00FFF0F1 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26DC82472AEFBB0C00FFF0F1 /* XCRemoteSwiftPackageReference "Reachability.swift" */;
+			productName = Reachability;
+		};
 		26F2AA3A2AEF3AC0005874D9 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 26F2AA392AEF3AC0005874D9 /* XCRemoteSwiftPackageReference "Alamofire" */;
