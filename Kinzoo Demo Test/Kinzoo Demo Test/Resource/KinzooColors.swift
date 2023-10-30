@@ -10,6 +10,7 @@ import UIKit
 struct KinzooColors {
     static let borderColor = UIColor.gray
     static let regularFont = UIColor.black
+    static let secondaryFont = UIColor.darkGray
     
     static let appBgColor = UIColor.white
 }

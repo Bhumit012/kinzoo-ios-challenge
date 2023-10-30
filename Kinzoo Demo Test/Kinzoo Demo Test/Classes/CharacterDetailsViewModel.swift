@@ -11,13 +11,12 @@ import Foundation
 final class CharacterDetailViewModel {
     
     //MARK: Properties
-    
-    weak var delegate: CharactersViewModelDelegate?
+
     let characterDataManager: CharacterDataManager
-    
-    // this can be imporved further by calling API when getCharacters() is empty instead of doing it manualy like below.
-    var characters: [Character] {
-        return characterDataManager.getCharacters()
+    var currentCharID:Int = 0
+
+    var character: Character? {
+        return characterDataManager.getCharacters().first { $0.id == currentCharID }
     }
     
     init(characterDataManager: CharacterDataManager) {

@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Initialize the MainCoordinator with the navigation controller
         let navigationController = UINavigationController()
         mainCoordinator = MainCoordinator(navigationController: navigationController)
-        mainCoordinator?.start()
+        mainCoordinator?.navigateToCharactersVC()
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

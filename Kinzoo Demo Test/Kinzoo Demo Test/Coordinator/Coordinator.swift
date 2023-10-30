@@ -12,8 +12,8 @@ protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
     
-    func start()
-    func startToCharacterDetails()
+    func navigateToCharactersVC()
+    func navigateToCharacterDetailsVC(charID: Int)
     func navigateTo(_ viewController: UIViewController)
 }
 
@@ -32,23 +32,23 @@ final class MainCoordinator: Coordinator {
         
     }
     
-    func start() {
+    func navigateToCharactersVC() {
         
         // Create and set up the CharactersViewModel
         let charactersViewModel = CharactersViewModel(characterDataManager: CharacterDataManager.shared)
         
         // inject the dependencies
-        let mainViewController = CharactersViewController(viewModel: charactersViewModel)
-        
-        //navigationController.setViewControllers([mainViewController], animated: true)
+        let mainViewController = CharactersViewController(viewModel: charactersViewModel,
+                                                          coordinator: self)
+
         DispatchQueue.main.async { [weak self] in
             self?.navigateTo(mainViewController)
         }
     }
     
-    func startToCharacterDetails() {
-        // Create and set up the CharactersViewModel
+    func navigateToCharacterDetailsVC(charID: Int) {
         let charactersDetailViewModel = CharacterDetailViewModel(characterDataManager: CharacterDataManager.shared)
+        charactersDetailViewModel.currentCharID = charID
         
         // inject the dependencies
         let detailViewController = CharactersDetailsViewController(viewModel: charactersDetailViewModel)
